@@ -1,7 +1,6 @@
 import React from 'react'
 import {useState} from 'react';
 import axios from '../../axiosInstance.js';
-import './style.scss';
 
 function Post() {
     const [Company,setCompany] = useState('');

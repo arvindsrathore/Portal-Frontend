@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import axios from '../../axiosInstance.js';
-import './style.css';
 
 const CompanyDetails = () => {
   const { companyId } = useParams();
@@ -23,40 +22,29 @@ const CompanyDetails = () => {
   if (!companyReviews) {
     return <div>Loading...</div>;
   }
-
+  const centerStyle = {
+    margin: 'auto',
+    width: '50%',
+    padding: '10px'
+  };
   return (
-    <div>
-      
-      <div class="ag-format-container">
-          <div class="ag-courses_box">
-            <h1>{companyId}</h1>
-            {companyReviews.map((companyReview, index) => (
-              <div class="ag-courses_item">
-              <a class="ag-courses-item_link">
-                <div class="ag-courses-item_bg"></div>
-                <div class="ag-courses-item_title">
-                <p><strong>Author:</strong> {companyReview.auther}</p>
-                  <p><strong>Role:</strong> {companyReview.role} ({companyReview.type})</p>
-                  <p><strong>Duration:</strong> {companyReview.duration}</p>
-                  <p><strong>Review:</strong> {companyReview.content}</p>
+    <>
+      {companyReviews.map((companyReview, index) => (
+          <div style = {centerStyle} class="col-lg-8 col-12">
+              <div class="custom-text-block">
+                  <h3 class="text-white mb-2" >{companyReview.role} - ({companyReview.type})</h3>
+
+                  <p class="text-white">{companyReview.content}  website.</p>
+
+                  <div class="custom-border-btn-wrap d-flex align-items-center mt-5">
+                      <a href="#" class="custom-btn custom-border-btn btn me-4">{companyReview.duration}</a>
+
+                      <a href="#" class="custom-link smoothscroll">{companyReview.auther}</a>
                   </div>
-                {/* <div class="ag-courses-item_title">
-                  {companyName.company}
-                </div>
-        
-                <div class="ag-courses-item_date-box">
-                  {'Reviews Available: '}
-                  <span class="ag-courses-item_date">
-                    {companyName.reviewCount}
-                  </span>
-                </div> */}
-              </a>
-            </div>
-              ))}
+              </div>
           </div>
-        </div>
-      
-    </div>
+      ))}
+    </>
   );
 };
 
