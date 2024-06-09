@@ -27,7 +27,7 @@ export default function Header () {
                     {/* <img src="images/logo.png" class="img-fluid logo-image"> */}
 
                     <div class="d-flex flex-column">
-                        <strong class="logo-text">ESP</strong>
+                        <strong class="logo-text">EXSP</strong>
                         <small class="logo-slogan">Exp Share Portal</small>
                     </div>
                 </a>

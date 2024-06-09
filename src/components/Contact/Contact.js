@@ -39,7 +39,7 @@ function Contact() {
                                     <p class="mb-0">
                                         <span class="contact-info-small-title">Office</span>
 
-                                        Akershusstranda 20, 0150 Oslo, Norway
+                                        Army Institute of Technology, Pune
                                     </p>
                                 </div>
 
@@ -50,7 +50,7 @@ function Contact() {
                                         <span class="contact-info-small-title">Website</span>
 
                                         <a href="#" class="site-footer-link">
-                                            www.jobportal.co
+                                            www.exsp.co
                                         </a>
                                     </p>
                                 </div>
@@ -74,7 +74,7 @@ function Contact() {
                                         <span class="contact-info-small-title">Email</span>
 
                                         <a href="mailto:info@yourgmail.com" class="site-footer-link">
-                                            info@jobportal.co
+                                            info@exsportal.co
                                         </a>
                                     </p>
                                 </div>

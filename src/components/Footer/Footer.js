@@ -14,7 +14,7 @@ export default function Footer() {
                             <img src="images/logo.png" class="img-fluid logo-image"></img>
 
                             <div class="d-flex flex-column">
-                                <strong class="logo-text">ESP</strong>
+                                <strong class="logo-text">EXSP</strong>
                                 <small class="logo-slogan">Exp Share Portal</small>
                             </div>
                         </div>  
