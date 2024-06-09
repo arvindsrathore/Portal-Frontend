@@ -3,21 +3,21 @@ import React from 'react'
 function About() {
   return (
     <>
-    <main  class="about-page" id="top">
-          <header class="site-header">
-                <div class="section-overlay"></div>
+    <main  classNameName="about-page" id="top">
+          <header className="site-header">
+                <div className="section-overlay"></div>
 
-                <div class="container">
-                    <div class="row">
+                <div className="container">
+                    <div className="row">
                         
-                        <div class="col-lg-12 col-12 text-center">
-                            <h1 class="text-white">About Portal</h1>
+                        <div className="col-lg-12 col-12 text-center">
+                            <h1 className="text-white">About Portal</h1>
 
                             <nav aria-label="breadcrumb">
-                                <ol class="breadcrumb justify-content-center">
-                                    <li class="breadcrumb-item">Home</li>
+                                <ol className="breadcrumb justify-content-center">
+                                    <li className="breadcrumb-item">Home</li>
 
-                                    <li class="breadcrumb-item active" aria-current="page">About</li>
+                                    <li className="breadcrumb-item active" aria-current="page">About</li>
                                 </ol>
                             </nav>
                         </div>
@@ -25,15 +25,15 @@ function About() {
                     </div>
                 </div>
             </header>
-            <section class="about-section">
-                <div class="container">
-                    <div class="row justify-content-center align-items-center">
+            <section className="about-section">
+                <div className="container">
+                    <div className="row justify-content-center align-items-center">
 
-                        <div class="col-lg-24 col-12">
-                            <div class="about-info-text">
-                                <h2 class="mb-0">Introducing EXSP</h2>
+                        <div className="col-lg-24 col-12">
+                            <div className="about-info-text">
+                                <h2 className="mb-0">Introducing EXSP</h2>
 
-                                <h4 class="mb-2">Prepare well for your Company</h4>
+                                <h4 className="mb-2">Prepare well for your Company</h4>
 
                                 <p>EXSP aims to provide a platform for individuals to share their experiences and insights gained from coding rounds or interview processes with various companies. The core idea is to facilitate knowledge-sharing among candidates, helping them prepare more effectively for similar rounds and ultimately increase their chances of success in landing desired positions.</p>
 
@@ -69,14 +69,14 @@ function About() {
                             </div>
                         </div>
 
-                        {/* <div class="col-lg-5 col-12 mt-5 mt-lg-0">
-                            <div class="about-image-wrap">
-                                <img src="images/horizontal-shot-happy-mixed-race-females.jpg" class="about-image about-image-border-radius img-fluid" alt=""></img>
+                        {/* <div className="col-lg-5 col-12 mt-5 mt-lg-0">
+                            <div className="about-image-wrap">
+                                <img src="images/horizontal-shot-happy-mixed-race-females.jpg" className="about-image about-image-border-radius img-fluid" alt=""></img>
 
-                                <div class="about-info d-flex">
-                                    <h4 class="text-white mb-0 me-2">20</h4>
+                                <div className="about-info d-flex">
+                                    <h4 className="text-white mb-0 me-2">20</h4>
 
-                                    <p class="text-white mb-0">years of experience</p>
+                                    <p className="text-white mb-0">years of experience</p>
                                 </div>
                             </div>
                         </div> */}

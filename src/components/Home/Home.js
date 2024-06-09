@@ -9,19 +9,19 @@ function Home() {
   return (
     <div>
         <main>
-            <section class="hero-section d-flex justify-content-center align-items-center">
-                <div class="section-overlay"></div>
+            <section className="hero-section d-flex justify-content-center align-items-center">
+                <div className="section-overlay"></div>
 
-                <div class="container">
-                    <div class="row">
+                <div className="container">
+                    <div className="row">
 
-                        <div class="col-lg-6 col-12 mb-5 mb-lg-0">
-                            <div class="hero-section-text mt-5">
-                                <h6 class="text-white">Are you looking for guidance about your next company interview?</h6>
+                        <div className="col-lg-6 col-12 mb-5 mb-lg-0">
+                            <div className="hero-section-text mt-5">
+                                <h6 className="text-white">Are you looking for guidance about your next company interview?</h6>
 
-                                <h1 class="hero-title text-white mt-4 mb-4">Experience Sharing Portal (EXSP)</h1>
+                                <h1 className="hero-title text-white mt-4 mb-4">Experience Sharing Portal (EXSP)</h1>
 
-                                <a href="#categories-section" class="custom-btn custom-border-btn btn">Browse Categories</a>
+                                <a href="#categories-section" className="custom-btn custom-border-btn btn">Browse Categories</a>
                             </div>
                         </div>
 
@@ -29,43 +29,43 @@ function Home() {
                 </div>
             </section>
 
-            <section class="about-section"style={{ paddingTop: '50px', paddingBottom: '50px' }}>
-                <div class="container">
-                    <div class="row">
+            <section className="about-section"style={{ paddingTop: '50px', paddingBottom: '50px' }}>
+                <div className="container">
+                    <div className="row">
 
-                        <div class="col-lg-3 col-12">
-                            <div class="about-image-wrap custom-border-radius-start">
-                                <img src={photo2} class="about-image custom-border-radius-start img-fluid" alt=""></img>
+                        <div className="col-lg-3 col-12">
+                            <div className="about-image-wrap custom-border-radius-start">
+                                <img src={photo2} className="about-image custom-border-radius-start img-fluid" alt=""></img>
 
-                                <div class="about-info">
-                                    <h4 class="text-white mb-0 me-2">Ms. Nobody</h4>
+                                <div className="about-info">
+                                    <h4 className="text-white mb-0 me-2">Ms. Nobody</h4>
 
-                                    <p class="text-white mb-0">Investor</p>
+                                    <p className="text-white mb-0">Investor</p>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="col-lg-6 col-12">
-                            <div class="custom-text-block">
-                                <h2 class="text-white mb-2">Introduction ESP</h2>
+                        <div className="col-lg-6 col-12">
+                            <div className="custom-text-block">
+                                <h2 className="text-white mb-2">Introduction ESP</h2>
 
-                                <p class="text-white">ESP aims to provide a platform for individuals to share their experiences and insights gained from coding rounds or interview processes with various companies</p>
+                                <p className="text-white">ESP aims to provide a platform for individuals to share their experiences and insights gained from coding rounds or interview processes with various companies</p>
 
-                                <div class="custom-border-btn-wrap d-flex align-items-center mt-5">
-                                    <Link to="/contact" class="custom-btn custom-border-btn btn me-4">Get to know us</Link>
+                                <div className="custom-border-btn-wrap d-flex align-items-center mt-5">
+                                    <Link to="/contact" className="custom-btn custom-border-btn btn me-4">Get to know us</Link>
 
-                                    <Link to="/explore" class="custom-link smoothscroll">Explore Jobs</Link>
+                                    <Link to="/explore" className="custom-link smoothscroll">Explore Jobs</Link>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="col-lg-3 col-12">
-                            <div class="instagram-block">
-                                <img src={photo1} class="about-image custom-border-radius-end img-fluid" alt=""></img>
+                        <div className="col-lg-3 col-12">
+                            <div className="instagram-block">
+                                <img src={photo1} className="about-image custom-border-radius-end img-fluid" alt=""></img>
 
-                                <div class="instagram-block-text">
-                                    <a href="https://instagram.com/" class="custom-btn btn">
-                                        <i class="bi-instagram"></i>
+                                <div className="instagram-block-text">
+                                    <a href="https://instagram.com/" className="custom-btn btn">
+                                        <i className="bi-instagram"></i>
                                         @ESP
                                     </a>
                                 </div>
@@ -77,22 +77,22 @@ function Home() {
             </section>
             
             <section style={{ paddingTop: '50px', paddingBottom: '50px' }}>
-                <div class="container">
-                    <div class="row">
+                <div className="container">
+                    <div className="row">
 
-                        <div class="col-lg-6 col-12">
-                            <div class="custom-text-block custom-border-radius-start">
-                                <h2 class="text-white mb-3">ESP helps you make your career path easy</h2>
+                        <div className="col-lg-6 col-12">
+                            <div className="custom-text-block custom-border-radius-start">
+                                <h2 className="text-white mb-3">ESP helps you make your career path easy</h2>
 
-                                <p class="text-white"> The core idea is to facilitate knowledge-sharing among candidates, helping them prepare more effectively for similar rounds and ultimately increase their chances of success in landing desired positions.</p>
+                                <p className="text-white"> The core idea is to facilitate knowledge-sharing among candidates, helping them prepare more effectively for similar rounds and ultimately increase their chances of success in landing desired positions.</p>
 
                                 
                             </div>
                         </div>
 
-                        <div class="col-lg-6 col-12">
-                            <div class="video-thumb">
-                                <img src={photo3} class="about-image custom-border-radius-end img-fluid" alt=""></img>
+                        <div className="col-lg-6 col-12">
+                            <div className="video-thumb">
+                                <img src={photo3} className="about-image custom-border-radius-end img-fluid" alt=""></img>
 
                             </div>
                         </div>

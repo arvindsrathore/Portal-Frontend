@@ -24,17 +24,17 @@ const handleLogout = async(e) => {
 }
   return (
     <>
-    <section class="hero-section d-flex justify-content-center align-items-center">
-                <div class="section-overlay"></div>
+    <section className="hero-section d-flex justify-content-center align-items-center">
+                <div className="section-overlay"></div>
 
-                <div class="container">
-                    <div class="row">
+                <div className="container">
+                    <div className="row">
 
-                        <div class="col-lg-6 col-12 mb-5 mb-lg-0">
-                            <div class="hero-section-text mt-5">
-                                <h6 class="text-white">Are you sure you want to LogOut?</h6>
+                        <div className="col-lg-6 col-12 mb-5 mb-lg-0">
+                            <div className="hero-section-text mt-5">
+                                <h6 className="text-white">Are you sure you want to LogOut?</h6>
 
-                                <button onClick={handleLogout} class="custom-btn custom-border-btn btn">Yes</button>
+                                <button onClick={handleLogout} className="custom-btn custom-border-btn btn">Yes</button>
                             </div>
                         </div>
                     </div>

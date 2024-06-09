@@ -28,50 +28,50 @@ function Register() {
     
     <>
 
-        <section class="hero-section d-flex justify-content-center align-items-center">
-                <div class="section-overlay"></div>
+        <section className="hero-section d-flex justify-content-center align-items-center">
+                <div className="section-overlay"></div>
 
-                <div class="container">
-                    <div class="row">
+                <div className="container">
+                    <div className="row">
 
-                        <div class="col-lg-6 col-12 mb-5 mb-lg-0">
-                            <div class="hero-section-text mt-5">
-                                <h6 class="text-white">Are you looking for your dream job?</h6>
+                        <div className="col-lg-6 col-12 mb-5 mb-lg-0">
+                            <div className="hero-section-text mt-5">
+                                <h6 className="text-white">Are you looking for your dream job?</h6>
 
-                                <h1 class="hero-title text-white mt-4 mb-4">Online Platform. Best Job portal</h1>
+                                <h1 className="hero-title text-white mt-4 mb-4">Online Platform. Best Job portal</h1>
 
-                                <a href="#categories-section" class="custom-btn custom-border-btn btn">Browse Categories</a>
+                                <a href="#categories-section" className="custom-btn custom-border-btn btn">Browse Categories</a>
                             </div>
                         </div>
 
-                        <div class="col-lg-6 col-12">
-                            <form class="custom-form hero-form"  onSubmit={handleSubmit} method="get">
-                                <h3 class="text-white mb-3">New User! Register Now</h3>
+                        <div className="col-lg-6 col-12">
+                            <form className="custom-form hero-form"  onSubmit={handleSubmit} method="get">
+                                <h3 className="text-white mb-3">New User! Register Now</h3>
 
-                                <div class="row">
-                                    <div class="col-lg-6 col-md-6 col-12">
-                                        <div class="input-group">
-                                            <span class="input-group-text" id="basic-addon1"><i class="bi-person custom-icon"></i></span>
+                                <div className="row">
+                                    <div className="col-lg-6 col-md-6 col-12">
+                                        <div className="input-group">
+                                            <span className="input-group-text" id="basic-addon1"><i className="bi-person custom-icon"></i></span>
 
-                                            <input type="email" name="email" id="job-title" class="form-control" placeholder="Email" value={email} onChange={(e) => setEmail(e.target.value)} required></input>
+                                            <input type="email" name="email" id="job-title" className="form-control" placeholder="Email" value={email} onChange={(e) => setEmail(e.target.value)} required></input>
                                         </div>
                                     </div>
 
-                                    <div class="col-lg-6 col-md-6 col-12">
-                                        <div class="input-group">
-                                            <span class="input-group-text" id="basic-addon2"><i class="bi-eye custom-icon"></i></span>
+                                    <div className="col-lg-6 col-md-6 col-12">
+                                        <div className="input-group">
+                                            <span className="input-group-text" id="basic-addon2"><i className="bi-eye custom-icon"></i></span>
 
-                                            <input type="password" name="password" id="job-location" class="form-control" placeholder="Password" value={password} onChange={(e) => setPassword(e.target.value)}  required></input>
+                                            <input type="password" name="password" id="job-location" className="form-control" placeholder="Password" value={password} onChange={(e) => setPassword(e.target.value)}  required></input>
                                         </div>
                                     </div>
 
-                                    <div class="col-lg-12 col-12">
-                                        <button type="submit" class="form-control">
+                                    <div className="col-lg-12 col-12">
+                                        <button type="submit" className="form-control">
                                             Register
                                         </button>
                                     </div>
 
-                                    <div class="col-12">
+                                    <div className="col-12">
                                         
                                     </div>
                                 </div>

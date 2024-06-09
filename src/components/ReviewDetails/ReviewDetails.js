@@ -26,24 +26,24 @@ const ReviewDetails = () => {
 
   return (
     <>
-    <header class="site-header">
-                <div class="section-overlay"></div>
+    <header className="site-header">
+                <div className="section-overlay"></div>
 
-                <div class="container">
-                    <div class="row">
+                <div className="container">
+                    <div className="row">
                         
-                        <div class="col-lg-12 col-12 text-center">
-                            <h1 class="text-white">Read Review</h1>
+                        <div className="col-lg-12 col-12 text-center">
+                            <h1 className="text-white">Read Review</h1>
 
                             <nav aria-label="breadcrumb">
-                                <ol class="breadcrumb justify-content-center">
-                                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                                <ol className="breadcrumb justify-content-center">
+                                    <li className="breadcrumb-item"><a href="index.html">Home</a></li>
 
-                                    <li class="breadcrumb-item active" aria-current="page">Explore</li>
+                                    <li className="breadcrumb-item active" aria-current="page">Explore</li>
 
-                                    <li class="breadcrumb-item active" aria-current="page">ReviewsList</li>
+                                    <li className="breadcrumb-item active" aria-current="page">ReviewsList</li>
 
-                                    <li class="breadcrumb-item active" aria-current="page">Reviews</li>
+                                    <li className="breadcrumb-item active" aria-current="page">Reviews</li>
                                 </ol>
                             </nav>
                         </div>
@@ -52,79 +52,79 @@ const ReviewDetails = () => {
                 </div>
             </header>
 
-            <section class="job-section section-padding pb-0">
-                <div class="container">
-                    <div class="row">
+            <section className="job-section section-padding pb-0">
+                <div className="container">
+                    <div className="row">
 
-                        <div class="col-lg-8 col-12">
-                            <h2 class="job-title mb-0">{Review?.role}</h2>
+                        <div className="col-lg-8 col-12">
+                            <h2 className="job-title mb-0">{Review?.role}</h2>
 
-                            <div class="job-thumb job-thumb-detail">
-                                <div class="d-flex flex-wrap align-items-center border-bottom pt-lg-3 pt-2 pb-3 mb-4">
-                                    <p class="job-location mb-0">
-                                        <i class="custom-icon bi-geo-alt me-1"></i>
+                            <div className="job-thumb job-thumb-detail">
+                                <div className="d-flex flex-wrap align-items-center border-bottom pt-lg-3 pt-2 pb-3 mb-4">
+                                    <p className="job-location mb-0">
+                                        <i className="custom-icon bi-geo-alt me-1"></i>
                                         {Review?.location}
                                     </p>
 
-                                    <p class="job-date mb-0">
-                                        <i class="custom-icon bi-clock me-1"></i>
+                                    <p className="job-date mb-0">
+                                        <i className="custom-icon bi-clock me-1"></i>
                                         {Review?.duration}
                                     </p>
 
-                                    <p class="job-price mb-0">
-                                        <i class="custom-icon bi-cash me-1"></i>
+                                    <p className="job-price mb-0">
+                                        <i className="custom-icon bi-cash me-1"></i>
                                         {Review?.salary}
                                     </p>
 
-                                    <div class="d-flex">
-                                        <p class="mb-0">
-                                            <a class="badge badge-level">Internship</a>
+                                    <div className="d-flex">
+                                        <p className="mb-0">
+                                            <a className="badge badge-level">Internship</a>
                                         </p>
 
-                                        <p class="mb-0">
-                                            <a class="badge">Freelance</a>
+                                        <p className="mb-0">
+                                            <a className="badge">Freelance</a>
                                         </p>
                                     </div>
                                 </div>
 
-                                <h4 class="mt-4 mb-2">Job Description</h4>
+                                <h4 className="mt-4 mb-2">Job Description</h4>
 
                                 <p>{Review?.content}</p>
                             </div>
                         </div>
 
-                        <div class="col-lg-4 col-12 mt-5 mt-lg-0">
-                            <div class="job-thumb job-thumb-detail-box bg-white shadow-lg">
-                                <div class="d-flex align-items-center">
-                                    <div class="job-image-wrap d-flex align-items-center bg-white shadow-lg mb-3">
-                                        <img src="images/logos/google.png" class="job-image me-3 img-fluid" alt=""></img>
+                        <div className="col-lg-4 col-12 mt-5 mt-lg-0">
+                            <div className="job-thumb job-thumb-detail-box bg-white shadow-lg">
+                                <div className="d-flex align-items-center">
+                                    <div className="job-image-wrap d-flex align-items-center bg-white shadow-lg mb-3">
+                                        <img src="images/logos/google.png" className="job-image me-3 img-fluid" alt=""></img>
 
-                                        <p class="mb-0">{Review?.company}</p>
+                                        <p className="mb-0">{Review?.company}</p>
                                     </div>
 
-                                    <a href="#" class="bi-bookmark ms-auto me-2"></a>
+                                    <a href="#" className="bi-bookmark ms-auto me-2"></a>
 
-                                    <a href="#" class="bi-heart"></a>
+                                    <a href="#" className="bi-heart"></a>
                                 </div>
 
-                                <h6 class="mt-3 mb-2">About the Company</h6>
+                                <h6 className="mt-3 mb-2">About the Company</h6>
 
                                 <p>Big companies, often referred to as multinational corporations or conglomerates, wield significant influence globally due to their extensive resources, diversified portfolios, and widespread operations...</p>
 
-                                <h6 class="mt-4 mb-3">Contact Information</h6>
+                                <h6 className="mt-4 mb-3">Contact Information</h6>
 
-                                <p class="mb-2">
-                                    <i class="custom-icon bi-globe me-1"></i>
+                                <p className="mb-2">
+                                    <i className="custom-icon bi-globe me-1"></i>
 
-                                    <a href="#" class="site-footer-link">
+                                    <a href="#" className="site-footer-link">
                                         {Review?.author}
                                     </a>
                                 </p>
 
                                 <p>
-                                    <i class="custom-icon bi-envelope me-1"></i>
+                                    <i className="custom-icon bi-envelope me-1"></i>
 
-                                    <a href="mailto:info@yourgmail.com" class="site-footer-link">
+                                    <a href="mailto:info@yourgmail.com" className="site-footer-link">
                                         {Review?.author}
                                     </a>
                                 </p>

@@ -40,20 +40,20 @@ function Post() {
 
   return (
     <>
-    <header class="site-header">
-                <div class="section-overlay"></div>
+    <header className="site-header">
+                <div className="section-overlay"></div>
 
-                <div class="container">
-                    <div class="row">
+                <div className="container">
+                    <div className="row">
                         
-                        <div class="col-lg-12 col-12 text-center">
-                            <h1 class="text-white">Post a Experience</h1>
+                        <div className="col-lg-12 col-12 text-center">
+                            <h1 className="text-white">Post a Experience</h1>
 
                             <nav aria-label="breadcrumb">
-                                <ol class="breadcrumb justify-content-center">
-                                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                                <ol className="breadcrumb justify-content-center">
+                                    <li className="breadcrumb-item"><a href="index.html">Home</a></li>
 
-                                    <li class="breadcrumb-item active" aria-current="page">Post</li>
+                                    <li className="breadcrumb-item active" aria-current="page">Post</li>
                                 </ol>
                             </nav>
                         </div>
@@ -61,78 +61,78 @@ function Post() {
                     </div>
                 </div>
             </header>
-    <section class="hero-section d-flex justify-content-center align-items-center">
-                <div class="section-overlay"></div>
+    <section className="hero-section d-flex justify-content-center align-items-center">
+                <div className="section-overlay"></div>
 
-                <div class="container">
-                    <div class="row">
+                <div className="container">
+                    <div className="row">
 
-                        {/* <div class="col-lg-6 col-12 mb-5 mb-lg-0">
-                            <div class="hero-section-text mt-5">
-                                <h6 class="text-white">Are you looking for your dream job?</h6>
+                        {/* <div className="col-lg-6 col-12 mb-5 mb-lg-0">
+                            <div className="hero-section-text mt-5">
+                                <h6 className="text-white">Are you looking for your dream job?</h6>
 
-                                <h1 class="hero-title text-white mt-4 mb-4">Online Platform. Best Job portal</h1>
+                                <h1 className="hero-title text-white mt-4 mb-4">Online Platform. Best Job portal</h1>
 
-                                <a href="#categories-section" class="custom-btn custom-border-btn btn">Browse Categories</a>
+                                <a href="#categories-section" className="custom-btn custom-border-btn btn">Browse Categories</a>
                             </div>
                         </div> */} 
 
                         <div >
-                            <form class="custom-form hero-form"  onSubmit={handleSubmit} method="get">
-                            <h3 class="text-white mb-3">Share your Experience</h3>
+                            <form className="custom-form hero-form"  onSubmit={handleSubmit} method="get">
+                            <h3 className="text-white mb-3">Share your Experience</h3>
 
-                              <div class="row">
-                                  <div class="col-12 mb-3">
-                                      <div class="input-group">
-                                          <span class="input-group-text" id="basic-addon1"><i class="bi-building custom-icon"></i></span>
-                                          <input type="text" name="company" id="company" class="form-control" placeholder="Company" onChange={(e) => setCompany(e.target.value)} required></input>
+                              <div className="row">
+                                  <div className="col-12 mb-3">
+                                      <div className="input-group">
+                                          <span className="input-group-text" id="basic-addon1"><i className="bi-building custom-icon"></i></span>
+                                          <input type="text" name="company" id="company" className="form-control" placeholder="Company" onChange={(e) => setCompany(e.target.value)} required></input>
                                       </div>
                                   </div>
 
-                                  <div class="col-lg-6 col-md-6 col-12 mb-3">
-                                      <div class="input-group">
-                                          <span class="input-group-text" id="basic-addon2"><i class="bi-gear custom-icon"></i></span>
-                                          <input type="text" name="type" id="type" class="form-control" placeholder="Type (Intern/FTE)" onChange={(e) => setType(e.target.value)} required></input>
+                                  <div className="col-lg-6 col-md-6 col-12 mb-3">
+                                      <div className="input-group">
+                                          <span className="input-group-text" id="basic-addon2"><i className="bi-gear custom-icon"></i></span>
+                                          <input type="text" name="type" id="type" className="form-control" placeholder="Type (Intern/FTE)" onChange={(e) => setType(e.target.value)} required></input>
                                       </div>
                                   </div>
 
-                                  <div class="col-lg-6 col-md-6 col-12 mb-3">
-                                      <div class="input-group">
-                                          <span class="input-group-text" id="basic-addon3"><i class="bi-person custom-icon"></i></span>
-                                          <input type="text" name="role" id="role" class="form-control" placeholder="Role" onChange={(e) => setRole(e.target.value)} required></input>
+                                  <div className="col-lg-6 col-md-6 col-12 mb-3">
+                                      <div className="input-group">
+                                          <span className="input-group-text" id="basic-addon3"><i className="bi-person custom-icon"></i></span>
+                                          <input type="text" name="role" id="role" className="form-control" placeholder="Role" onChange={(e) => setRole(e.target.value)} required></input>
                                       </div>
                                   </div>
 
-                                  <div class="col-lg-6 col-md-6 col-12 mb-3">
-                                      <div class="input-group">
-                                          <span class="input-group-text" id="basic-addon2"><i class="bi-geo custom-icon"></i></span>
-                                          <input type="text" name="type" id="type" class="form-control" placeholder="Location" onChange={(e) => setLocation(e.target.value)} required></input>
+                                  <div className="col-lg-6 col-md-6 col-12 mb-3">
+                                      <div className="input-group">
+                                          <span className="input-group-text" id="basic-addon2"><i className="bi-geo custom-icon"></i></span>
+                                          <input type="text" name="type" id="type" className="form-control" placeholder="Location" onChange={(e) => setLocation(e.target.value)} required></input>
                                       </div>
                                   </div>
 
-                                  <div class="col-lg-6 col-md-6 col-12 mb-3">
-                                      <div class="input-group">
-                                          <span class="input-group-text" id="basic-addon3"><i class="bi-currency-dollar custom-icon"></i></span>
-                                          <input type="text" name="role" id="role" class="form-control" placeholder="Stipend" onChange={(e) => setSalary(e.target.value)} required></input>
+                                  <div className="col-lg-6 col-md-6 col-12 mb-3">
+                                      <div className="input-group">
+                                          <span className="input-group-text" id="basic-addon3"><i className="bi-currency-dollar custom-icon"></i></span>
+                                          <input type="text" name="role" id="role" className="form-control" placeholder="Stipend" onChange={(e) => setSalary(e.target.value)} required></input>
                                       </div>
                                   </div>
 
-                                  <div class="col-12 mb-3">
-                                      <div class="input-group">
-                                          <span class="input-group-text" id="basic-addon4"><i class="bi-chat custom-icon"></i></span>
-                                          <textarea type="text" name="experience" id="experience" class="form-control" placeholder="Experience" onChange={(e) => setContent(e.target.value)} style={{ height: '120px', resize: 'none' }} required ></textarea>
+                                  <div className="col-12 mb-3">
+                                      <div className="input-group">
+                                          <span className="input-group-text" id="basic-addon4"><i className="bi-chat custom-icon"></i></span>
+                                          <textarea type="text" name="experience" id="experience" className="form-control" placeholder="Experience" onChange={(e) => setContent(e.target.value)} style={{ height: '120px', resize: 'none' }} required ></textarea>
                                       </div>
                                   </div>
 
-                                  <div class="col-12 mb-3">
-                                      <div class="input-group">
-                                          <span class="input-group-text" id="basic-addon5"><i class="bi-clock custom-icon"></i></span>
-                                          <input type="text" name="duration" id="duration" class="form-control" placeholder="Duration" onChange={(e) => setDuration(e.target.value)} required></input>
+                                  <div className="col-12 mb-3">
+                                      <div className="input-group">
+                                          <span className="input-group-text" id="basic-addon5"><i className="bi-clock custom-icon"></i></span>
+                                          <input type="text" name="duration" id="duration" className="form-control" placeholder="Duration" onChange={(e) => setDuration(e.target.value)} required></input>
                                       </div>
                                   </div>
 
-                                  <div class="col-12">
-                                      <button type="submit" class="form-control">
+                                  <div className="col-12">
+                                      <button type="submit" className="form-control">
                                           Submit
                                       </button>
                                   </div>

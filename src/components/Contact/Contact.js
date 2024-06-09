@@ -4,20 +4,20 @@ function Contact() {
   return (
     <>
     
-    <header class="site-header">
-                <div class="section-overlay"></div>
+    <header className="site-header">
+                <div className="section-overlay"></div>
 
-                <div class="container">
-                    <div class="row">
+                <div className="container">
+                    <div className="row">
                         
-                        <div class="col-lg-12 col-12 text-center">
-                            <h1 class="text-white">Get in touch</h1>
+                        <div className="col-lg-12 col-12 text-center">
+                            <h1 className="text-white">Get in touch</h1>
 
                             <nav aria-label="breadcrumb">
-                                <ol class="breadcrumb justify-content-center">
-                                    <li class="breadcrumb-item"><a>Home</a></li>
+                                <ol className="breadcrumb justify-content-center">
+                                    <li className="breadcrumb-item"><a>Home</a></li>
 
-                                    <li class="breadcrumb-item active" aria-current="page">Contact</li>
+                                    <li className="breadcrumb-item active" aria-current="page">Contact</li>
                                 </ol>
                             </nav>
                         </div>
@@ -27,53 +27,53 @@ function Contact() {
             </header>
 
 
-            <section class="contact-section section-padding">
-                <div class="container">
-                    <div class="row justify-content-center">
+            <section className="contact-section section-padding">
+                <div className="container">
+                    <div className="row justify-content-center">
 
-                        <div class="col-lg-5 col-12 mb-3 mx-auto">
-                            <div class="contact-info-wrap">
-                                <div class="contact-info d-flex align-items-center mb-3">
-                                    <i class="custom-icon bi-building"></i>
+                        <div className="col-lg-5 col-12 mb-3 mx-auto">
+                            <div className="contact-info-wrap">
+                                <div className="contact-info d-flex align-items-center mb-3">
+                                    <i className="custom-icon bi-building"></i>
 
-                                    <p class="mb-0">
-                                        <span class="contact-info-small-title">Office</span>
+                                    <p className="mb-0">
+                                        <span className="contact-info-small-title">Office</span>
 
                                         Army Institute of Technology, Pune
                                     </p>
                                 </div>
 
-                                <div class="contact-info d-flex align-items-center">
-                                    <i class="custom-icon bi-globe"></i>
+                                <div className="contact-info d-flex align-items-center">
+                                    <i className="custom-icon bi-globe"></i>
 
-                                    <p class="mb-0">
-                                        <span class="contact-info-small-title">Website</span>
+                                    <p className="mb-0">
+                                        <span className="contact-info-small-title">Website</span>
 
-                                        <a href="#" class="site-footer-link">
+                                        <a href="#" className="site-footer-link">
                                             www.exsp.co
                                         </a>
                                     </p>
                                 </div>
 
-                                <div class="contact-info d-flex align-items-center">
-                                    <i class="custom-icon bi-telephone"></i>
+                                <div className="contact-info d-flex align-items-center">
+                                    <i className="custom-icon bi-telephone"></i>
 
-                                    <p class="mb-0">
-                                        <span class="contact-info-small-title">Phone</span>
+                                    <p className="mb-0">
+                                        <span className="contact-info-small-title">Phone</span>
 
-                                        <a class="site-footer-link">
+                                        <a className="site-footer-link">
                                             305-240-9671
                                         </a>
                                     </p>
                                 </div>
 
-                                <div class="contact-info d-flex align-items-center">
-                                    <i class="custom-icon bi-envelope"></i>
+                                <div className="contact-info d-flex align-items-center">
+                                    <i className="custom-icon bi-envelope"></i>
 
-                                    <p class="mb-0">
-                                        <span class="contact-info-small-title">Email</span>
+                                    <p className="mb-0">
+                                        <span className="contact-info-small-title">Email</span>
 
-                                        <a class="site-footer-link">
+                                        <a className="site-footer-link">
                                             info@exsportal.co
                                         </a>
                                     </p>
@@ -81,31 +81,31 @@ function Contact() {
                             </div>
                         </div>
 
-                        {/* <div class="col-lg-8 col-12 mx-auto">
-                            <form class="custom-form contact-form" action="#" method="post" role="form">
-                                <h2 class="text-center mb-4">Project in mind? Let’s Talk</h2>
+                        {/* <div className="col-lg-8 col-12 mx-auto">
+                            <form className="custom-form contact-form" action="#" method="post" role="form">
+                                <h2 className="text-center mb-4">Project in mind? Let’s Talk</h2>
 
-                                <div class="row">
-                                    <div class="col-lg-6 col-md-6 col-12">
+                                <div className="row">
+                                    <div className="col-lg-6 col-md-6 col-12">
                                         <label for="first-name">Full Name</label>
 
-                                        <input type="text" name="full-name" id="full-name" class="form-control" placeholder="Jack Doe" required></input>
+                                        <input type="text" name="full-name" id="full-name" className="form-control" placeholder="Jack Doe" required></input>
                                     </div>
 
-                                    <div class="col-lg-6 col-md-6 col-12">
+                                    <div className="col-lg-6 col-md-6 col-12">
                                         <label for="email">Email Address</label>
 
-                                         <input type="email" name="email" id="email" pattern="[^ @]*@[^ @]*" class="form-control" placeholder="Jackdoe@gmail.com" required></input>
+                                         <input type="email" name="email" id="email" pattern="[^ @]*@[^ @]*" className="form-control" placeholder="Jackdoe@gmail.com" required></input>
                                     </div>
 
-                                    <div class="col-lg-12 col-12">
+                                    <div className="col-lg-12 col-12">
                                         <label for="message">Message</label>
 
-                                        <textarea name="message" rows="6" class="form-control" id="message" placeholder="What can we help you?"></textarea>
+                                        <textarea name="message" rows="6" className="form-control" id="message" placeholder="What can we help you?"></textarea>
                                     </div>
 
-                                    <div class="col-lg-4 col-md-4 col-6 mx-auto">
-                                        <button type="submit" class="form-control">Send Message</button>
+                                    <div className="col-lg-4 col-md-4 col-6 mx-auto">
+                                        <button type="submit" className="form-control">Send Message</button>
                                     </div>
                                 </div>
                             </form>
