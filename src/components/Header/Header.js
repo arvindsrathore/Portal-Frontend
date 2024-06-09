@@ -7,12 +7,8 @@ export default function Header () {
 
     let [LoggedIn,setLoggedIn] = useState(false);
 
-    // console.log(title);
-    // var currUser = "";
     const handleLogIn = async(e) => {
         const result = await axios.get('/users/details');
-        // currUser = result.data.email;
-        console.log(result.data)
         if(result.data.status === "success") setLoggedIn(LoggedIn = true)
         else    setLoggedIn(LoggedIn = false);
     }
@@ -31,8 +27,8 @@ export default function Header () {
                     {/* <img src="images/logo.png" class="img-fluid logo-image"> */}
 
                     <div class="d-flex flex-column">
-                        <strong class="logo-text">Gotto</strong>
-                        <small class="logo-slogan">Online Job Portal</small>
+                        <strong class="logo-text">ESP</strong>
+                        <small class="logo-slogan">Exp Share Portal</small>
                     </div>
                 </a>
 
@@ -43,14 +39,14 @@ export default function Header () {
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav align-items-center ms-lg-5">
                         <li class="nav-item">
-                            <Link class="nav-link active" to="/home">Home</Link>
+                            <Link class="nav-link active" to="/">Home</Link>
                         </li>
 
                         <li class="nav-item">
                             <Link class="nav-link" to="/explore">Explore</Link>
                         </li>
 
-                        <li class="nav-item dropdown">
+                        {/* <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarLightDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Pages</a>
 
                             <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
@@ -58,6 +54,14 @@ export default function Header () {
 
                                 <li><a class="dropdown-item" href="job-details.html">Company Details</a></li>
                             </ul>
+                        </li> */}
+
+                        <li class="nav-item">
+                            <Link class="nav-link" to="/post">Post</Link>
+                        </li>
+
+                        <li class="nav-item">
+                            <Link class="nav-link" to="/about">About</Link>
                         </li>
 
                         <li class="nav-item">
@@ -69,7 +73,11 @@ export default function Header () {
                         </li>
 
                         <li class="nav-item">
-                            <Link class="nav-link custom-btn btn" to='/login'>Login</Link>
+                            <Link class="nav-link  btn" to='/login'>Login</Link>
+                        </li>
+
+                        <li class="nav-item">
+                            <Link class="nav-link  btn" to='/logout'>Logout</Link>
                         </li>
                     </ul>
                 </div>

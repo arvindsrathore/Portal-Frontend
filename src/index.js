@@ -22,18 +22,22 @@ import Login from './components/Login/Login.js';
 import Post from './components/Post/Post.js';
 import CompanyDetails from './components/CompanyDetails/CompanyDetails.js';
 import Home from './components/Home/Home.js';
+import Logout from './components/Logout/Logout.js';
+import ReviewDetails from './components/ReviewDetails/ReviewDetails.js';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path='/' element={<Layout />}>
-    <Route path='home' element={<Home />} />
+    <Route path='/' element={<Home />} />
       <Route path='explore' element={<Explore />} />
       <Route path='about' element={<About />} />
       <Route path='contact' element={<Contact />} />
       <Route path='register' element={<Register />} />
       <Route path='login' element={<Login />} />
+      <Route path='logout' element={<Logout />} />
       <Route path='post' element={<Post />} />
       <Route path='details/:companyId' element={<CompanyDetails />} />
+      <Route path='details/readreview/:reviewId' element={<ReviewDetails />} />
     </Route>
   )
 )
