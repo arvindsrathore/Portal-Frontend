@@ -15,7 +15,7 @@ function Contact() {
 
                             <nav aria-label="breadcrumb">
                                 <ol class="breadcrumb justify-content-center">
-                                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                                    <li class="breadcrumb-item"><a>Home</a></li>
 
                                     <li class="breadcrumb-item active" aria-current="page">Contact</li>
                                 </ol>
@@ -61,7 +61,7 @@ function Contact() {
                                     <p class="mb-0">
                                         <span class="contact-info-small-title">Phone</span>
 
-                                        <a href="tel: 305-240-9671" class="site-footer-link">
+                                        <a class="site-footer-link">
                                             305-240-9671
                                         </a>
                                     </p>
@@ -73,7 +73,7 @@ function Contact() {
                                     <p class="mb-0">
                                         <span class="contact-info-small-title">Email</span>
 
-                                        <a href="mailto:info@yourgmail.com" class="site-footer-link">
+                                        <a class="site-footer-link">
                                             info@exsportal.co
                                         </a>
                                     </p>

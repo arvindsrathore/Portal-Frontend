@@ -49,7 +49,7 @@ function Home() {
                             <div class="custom-text-block">
                                 <h2 class="text-white mb-2">Introduction ESP</h2>
 
-                                <p class="text-white">ESP aims to provide a platform for individuals to share their experiences and insights gained from coding rounds or interview processes with various companies.<a href="https://www.tooplate.com" target="_parent">Tooplate website</a>. Images are from <a href="https://www.freepik.com/" target="_blank">FreePik</a> website.</p>
+                                <p class="text-white">ESP aims to provide a platform for individuals to share their experiences and insights gained from coding rounds or interview processes with various companies</p>
 
                                 <div class="custom-border-btn-wrap d-flex align-items-center mt-5">
                                     <Link to="/contact" class="custom-btn custom-border-btn btn me-4">Get to know us</Link>

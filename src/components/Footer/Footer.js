@@ -30,7 +30,7 @@ export default function Footer() {
                         <p class="mb-2">
                             <i class="custom-icon bi-telephone me-1"></i>
 
-                            <a href="tel: 305-240-9671" class="site-footer-link">
+                            <a  class="site-footer-link">
                                 305-240-9671
                             </a>
                         </p>
@@ -38,7 +38,7 @@ export default function Footer() {
                         <p>
                             <i class="custom-icon bi-envelope me-1"></i>
 
-                            <a href="mailto:info@yourgmail.com" class="site-footer-link">
+                            <a  class="site-footer-link">
                                 info@esportal.co
                             </a>
                         </p>

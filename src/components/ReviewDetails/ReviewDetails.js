@@ -78,11 +78,11 @@ const ReviewDetails = () => {
 
                                     <div class="d-flex">
                                         <p class="mb-0">
-                                            <a href="job-listings.html" class="badge badge-level">Internship</a>
+                                            <a class="badge badge-level">Internship</a>
                                         </p>
 
                                         <p class="mb-0">
-                                            <a href="job-listings.html" class="badge">Freelance</a>
+                                            <a class="badge">Freelance</a>
                                         </p>
                                     </div>
                                 </div>
@@ -90,38 +90,6 @@ const ReviewDetails = () => {
                                 <h4 class="mt-4 mb-2">Job Description</h4>
 
                                 <p>{Review?.content}</p>
-
-                                {/* <h5 class="mt-4 mb-3">The Role</h5>
-
-                                <p class="mb-1"><strong>Benefits:</strong> Lorem Ipsum dolor sit amet, consectetur adipsicing kengan omeg kohm tokito adipcingi elit</p>
-
-                                <p><strong>Good salary:</strong> Lorem Ipsum dolor sit amet, consectetur adipsicing kengan omeg kohm tokito</p>
-
-                                <h5 class="mt-4 mb-3">Requirements</h5>
-
-                                <ul>
-                                    <li>Strong knowledge in computing skill</li>
-
-                                    <li>Minimum 5 years of working experiences consectetur omeg</li>
-
-                                    <li>Excellent interpersonal skills</li>
-                                </ul>
-
-                                <div class="d-flex justify-content-center flex-wrap mt-5 border-top pt-4">
-                                    <a href="#" class="custom-btn btn mt-2">Apply now</a>
-
-                                    <a href="#" class="custom-btn custom-border-btn btn mt-2 ms-lg-4 ms-3">Save this job</a>
-
-                                    <div class="job-detail-share d-flex align-items-center">
-                                        <p class="mb-0 me-lg-4 me-3">Share:</p>
-
-                                        <a href="#" class="bi-facebook"></a>
-
-                                        <a href="#" class="bi-twitter mx-3"></a>
-
-                                        <a href="#" class="bi-share"></a>
-                                    </div>
-                                </div> */}
                             </div>
                         </div>
 
@@ -149,7 +117,7 @@ const ReviewDetails = () => {
                                     <i class="custom-icon bi-globe me-1"></i>
 
                                     <a href="#" class="site-footer-link">
-                                        {Review?.auther}
+                                        {Review?.author}
                                     </a>
                                 </p>
 
@@ -157,7 +125,7 @@ const ReviewDetails = () => {
                                     <i class="custom-icon bi-envelope me-1"></i>
 
                                     <a href="mailto:info@yourgmail.com" class="site-footer-link">
-                                        {Review?.auther}
+                                        {Review?.author}
                                     </a>
                                 </p>
                             </div>
@@ -166,23 +134,7 @@ const ReviewDetails = () => {
                     </div>
                 </div>
             </section>
-
     </>
-    //   {companyReviews.map((companyReview, index) => (
-    //       <div style = {centerStyle} class="col-lg-8 col-12">
-    //           <div class="custom-text-block">
-    //               <h3 class="text-white mb-2" >{companyReview.role} - ({companyReview.type})</h3>
-
-    //               <p class="text-white">{companyReview.content}  website.</p>
-
-    //               <div class="custom-border-btn-wrap d-flex align-items-center mt-5">
-    //                   <a href="#" class="custom-btn custom-border-btn btn me-4">{companyReview.duration}</a>
-
-    //                   <a href="#" class="custom-link smoothscroll">{companyReview.auther}</a>
-    //               </div>
-    //           </div>
-    //       </div>
-    //   ))}
   );
 };
 

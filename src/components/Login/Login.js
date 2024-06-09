@@ -70,17 +70,7 @@ function Login() {
                                     </div>
 
                                     <div class="col-12">
-                                        <div class="d-flex flex-wrap align-items-center mt-4 mt-lg-0">
-                                            <span class="text-white mb-lg-0 mb-md-0 me-2">Popular keywords:</span>
-
-                                            <div>
-                                                <a href="job-listings.html" class="badge">Web design</a>
-
-                                                <a href="job-listings.html" class="badge">Marketing</a>
-
-                                                <a href="job-listings.html" class="badge">Customer support</a>
-                                            </div>
-                                        </div>
+                                        
                                     </div>
                                 </div>
                             </form>{response && <p>{response}</p>}
