@@ -6,18 +6,21 @@ import { useNavigate } from 'react-router-dom';
 function Explore() {
   const [companyNames, setCompanyNames] = useState([]);
 
-  useEffect(() => {
+  const getCompanyDetails = async () => {
     // Fetch company names from backend API
     axios.get('explore/getCompanies')
-      .then(response => {
-        console.log(response.data.message);
-        const data = response.data.message;
-        
-        setCompanyNames(data);
-      })
-      .catch(error => {
-        console.error('Error fetching company names:', error);
-      });
+    .then(response => {
+    const data = response.data.message;
+    
+    setCompanyNames(data);
+    console.log(response.data.message);
+    })
+    .catch(error => {
+    console.error('Error fetching company names:', error);
+    });
+  }
+  useEffect(() => {
+    getCompanyDetails();
   }, []);
 
   const navigate = useNavigate();

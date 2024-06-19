@@ -15,6 +15,7 @@ function Post() {
     const handleSubmit = async () => {
       try {
             const isloggedin = await axios.get('/users/details');
+            console.log(isloggedin);
             if(isloggedin.data.status === "failure"){
               alert("No User is logged in")
             }

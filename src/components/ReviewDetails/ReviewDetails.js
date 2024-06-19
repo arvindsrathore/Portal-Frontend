@@ -4,7 +4,6 @@ import axios from '../../axiosInstance.js';
 
 const ReviewDetails = () => {
   const { reviewId } = useParams();
-  console.log("herer it is")
   console.log(reviewId);
   const [Review, setReview] = useState(null);
 
