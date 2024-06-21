@@ -36,8 +36,10 @@ function Post() {
             const result = await axios.post('/post', postData);
 
             if (result.data.status === "success") {
+                alert("Posted Successfully");
                 setResponse("Posted Successfully");
             } else {
+                alert("Failed to post the data");
                 setResponse("Failed to post the data");
             }
 
