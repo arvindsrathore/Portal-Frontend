@@ -84,7 +84,7 @@ function Post() {
                                     <div className="col-lg-6 col-md-6 col-12 mb-3">
                                         <div className="input-group">
                                             <span className="input-group-text" id="basic-addon2"><i className="bi-gear custom-icon"></i></span>
-                                            <input type="text" name="type" id="type" className="form-control" placeholder="Type (Intern/FTE)" onChange={(e) => setType(e.target.value)} required />
+                                            <input type="text" name="type" id="type" className="form-control" placeholder="Type (Internship/FTE)" onChange={(e) => setType(e.target.value)} required />
                                         </div>
                                     </div>
                                     <div className="col-lg-6 col-md-6 col-12 mb-3">

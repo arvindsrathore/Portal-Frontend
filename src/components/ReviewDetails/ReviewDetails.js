@@ -6,22 +6,45 @@ const ReviewDetails = () => {
   const { reviewId } = useParams();
   console.log(reviewId);
   const [Review, setReview] = useState(null);
+  const [CompanyText, setCompanyText] = useState(null);
 
   const getReview = async() => {
-    await axios.get(`/explore/reviewdetails/${reviewId}`)
-      .then(response => {
+    
+    try {
+        const response = await axios.get(`/explore/reviewdetails/${reviewId}`);
         const data = response.data.message;
-        console.log(data)
-        setReview(data)
-      })
-      .catch(e => {
-        console.log('Error fetching Review details')
-      })
+        console.log(data);
+        setReview(data);
+      } catch (e) {
+        console.log('Error fetching Review details');
+      }
   }
-
+  
+  const getCompanyText = async() => {
+    
+    if (!Review){
+        console.log("No review fetch");
+        return;
+    }
+    try {
+      const response = await axios.post('/genAI/getResponse', { prompt: Review.company });
+      const data = response.data.response;
+      console.log(data);
+      setCompanyText(data);
+    } catch (e) {
+      console.log('Error fetching Company details');
+    }
+  }
+  
   useEffect(() => {
     getReview();
   }, [reviewId]);
+
+  useEffect(() => {
+    if (Review) {
+      getCompanyText();
+    }
+  }, [Review]);
 
   return (
     <>
@@ -108,7 +131,9 @@ const ReviewDetails = () => {
 
                                 <h6 className="mt-3 mb-2">About the Company</h6>
 
-                                <p>Big companies, often referred to as multinational corporations or conglomerates, wield significant influence globally due to their extensive resources, diversified portfolios, and widespread operations...</p>
+                                <p>
+                                {CompanyText}
+                                </p>
 
                                 <h6 className="mt-4 mb-3">Contact Information</h6>
 
